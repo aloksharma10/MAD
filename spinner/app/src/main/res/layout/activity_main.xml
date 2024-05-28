@@ -8,12 +8,38 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="364dp"
-        android:layout_height="19dp"
-        android:entries="@array/planets_array"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="141dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="409dp"
+        android:text="Button"
+        android:onClick="Go_URL"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.369"
-        tools:layout_editor_absoluteX="23dp" />
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="206dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="44dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
